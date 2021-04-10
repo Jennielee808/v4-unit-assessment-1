@@ -99,4 +99,7 @@ let addRemote = {
     following the guidelines above to describe the push command.
 */
 
-//CODE HERE
+let push = {
+    description: 'pushes your work to github',
+    code: ' git push',
+}

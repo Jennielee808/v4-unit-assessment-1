@@ -30,7 +30,14 @@ function sum(num1, num2){
   If 'data' is a falsy value, return a false boolean.
 */
 
-
+function trueOrFalse(data){
+  if( data === 0) {
+    return false
+  }
+  else{
+    return true
+  }
+}
   
   
 //////////////////PROBLEM 6////////////////////
@@ -41,7 +48,13 @@ function sum(num1, num2){
   If the number is even, return the string: 'the number is even'.
 */
 
-//CODE HERE
+function oddChecker(num){
+  if( num % 2 === 0){
+  return 'the number is even'}
+  else{
+    return 'the number is odd'
+  }
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -50,7 +63,9 @@ function sum(num1, num2){
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+function iLove(name, love) {
+  return  name  + " loves "  + love
+}
 
 
 //////////////////PROBLEM 8////////////////////
@@ -58,12 +73,12 @@ function sum(num1, num2){
 
 const faveColors = ['red', 'green', 'black']
 
-//CODE HERE
+let colorCopy = faveColors.slice()
 
 //////////////////PROBLEM 9////////////////////
 /* Add a fourth color to the end of the 'colorCopy' array using the push method. */
 
-//CODE HERE
+colorCopy.push('pink')
 
 //////////////////PROBLEM 10////////////////////
 /*
@@ -73,7 +88,7 @@ const faveColors = ['red', 'green', 'black']
 
 const numbers = [1, 2, 3, 4, 5]
 
-//CODE HERE
+let middleNums = numbers.slice(1, 4)
 
 //////////////////PROBLEM 11////////////////////
 /*
@@ -89,7 +104,12 @@ const numbers = [1, 2, 3, 4, 5]
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
-//CODE HERE
+let me {
+  firstName: 'Jennifer',
+  state: 'Utah',
+  age: 31
+  greeter:`Hello! My name is ${firstName} and I live in ${state}`
+}
 
 //////////////////PROBLEM 12////////////////////
 /* 

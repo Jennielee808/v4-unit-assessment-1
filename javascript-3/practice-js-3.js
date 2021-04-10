@@ -1,12 +1,12 @@
 //////////////////STEP 1////////////////////
 /* Create an array called 'groceries' that contains three grocery items of your choice as strings. */
 
-//CODE HERE
+let groceries = ['eggs', 'hashbrowns', 'bacon']
 
 //////////////////STEP 2////////////////////
 /* Create a variable called 'yourName' that is assigned the value of your name as a string. */
 
-//CODE HERE
+let yourName = 'Jennifer'
 
 //////////////////STEP 3////////////////////
 /*
@@ -16,8 +16,8 @@
     the function would return 'Joseph's Grocery List'.
 */
 
-//CODE HERE
 
+    
 //////////////////STEP 4////////////////////
 /* 
     Create a function called 'addItem' that takes in one parameter called 'item'. 
