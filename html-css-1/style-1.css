@@ -1,3 +1,14 @@
-.red-container {
+.red-box {
     background-color: green;
 }
+
+function checkGroceryCount(groceries){
+    if(groceries.length > 5){
+        return 'That looks like a big trip'
+    }
+    else if(groceries.length === 1){
+        return '1 item'
+    }
+    else(groceries.length <= 5){
+        return `${groceries.lenght} + ' items'`
+    }

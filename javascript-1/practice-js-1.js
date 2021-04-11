@@ -104,12 +104,15 @@ let middleNums = numbers.slice(1, 4)
   For example: 'Hello! My name is Joseph and I live in Utah"
 */
 
-let me {
-  firstName: 'Jennifer',
+me = {
+  firstname: 'Jennifer',
   state: 'Utah',
-  age: 31
-  greeter:`Hello! My name is ${firstName} and I live in ${state}`
+  age: 31,
+  greeter: function() {
+    return `Hello! My name is ${firstname} and I live in ${state}`
+  }
 }
+
 
 //////////////////PROBLEM 12////////////////////
 /* 
@@ -124,8 +127,9 @@ let me {
   Return the answers array inside of the function.
 */
 
-// CODE HERE
+function bigOrSmall(arr) {
 
+}
 //////////////////PROBLEM 13////////////////////
 /* 
   Create a function called 'arrayReverser' that takes in one parameter, 'arr'. 
@@ -136,7 +140,10 @@ let me {
   Finally, return the 'reversed' array variable.
 */
 
-//CODE HERE
+function arrayReverser(arr) {
+  
+}
+
 
 //////////////////PROBLEM 14////////////////////
 
@@ -162,7 +169,7 @@ function secondFunction() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['global', 'inner', 'outer', 'functional']
+let globalScope = ['global']
 
 //This array should contain the variable names (as strings) accessible in the firstFunction function.
 let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
@@ -171,7 +178,7 @@ let firstFunctionScope = ['global', 'inner', 'outer', 'functional']
 let innerFunctionScope = ['global', 'inner', 'outer', 'functional']
 
 //This array should contain the variable names (as strings) accessible in the secondFunction function.
-let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
+let secondFunctionScope = ['global', 'functional']
 
 
 //////////////////PROBLEM 15////////////////////
@@ -180,8 +187,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Invoke the callback passing the first item in the array as an argument.
 */
 
-//CODE HERE
-
+function firstItem(arr, cb){
+  return cb(arr[0])
+}
 //////////////////PROBLEM 16////////////////////
 /* 
   Write a function called isItBob that takes in two arguments: an object and a callback function. 
@@ -190,7 +198,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Otherwise, invoke the callback passing in false.
 */
 
-//CODE HERE
+function isItBob(obj, cb) {
+  obj === 'Bob' ? cb(true) : cb(false)
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -199,7 +209,9 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   Then invoke the callback, passing in the doubled array.
 */
 
-//CODE HERE
+function giveMeDoubles(arr, cb){
+ 
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
@@ -226,4 +238,11 @@ let secondFunctionScope = ['global', 'inner', 'outer', 'functional']
   }
 */
 
-//CODE HERE
+function carFactory(make, model, year) {
+  let myCar =
+   make: 'Chevy',
+   model: 'Monza Spyder',
+   year: 1979,
+}
+myCar.year > 2018 ? myCar.isNew = true : myCar.isNew = false;
+

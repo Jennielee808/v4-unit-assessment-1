@@ -16,7 +16,9 @@ let yourName = 'Jennifer'
     the function would return 'Joseph's Grocery List'.
 */
 
-
+function setGroceryListTitle(x) {
+    return x + "'s" + " Grocery" + " List"
+}
     
 //////////////////STEP 4////////////////////
 /* 
@@ -26,7 +28,9 @@ let yourName = 'Jennifer'
     that takes care of some of the work for getting your page to display correctly.
 */
 
-//CODE HERE
+function addItem(item) {
+    return groceries.push(item)
+}
 
 //////////////////STEP 5////////////////////
 /*
@@ -36,7 +40,9 @@ let yourName = 'Jennifer'
     Then, invoke the displayData() function inside of your removeItem function.
 */
 
-//CODE HERE
+function removeItem(index){
+    return groceries.splice()
+}
 
 //////////////////STEP 6////////////////////
 /*
@@ -49,8 +55,20 @@ let yourName = 'Jennifer'
     with NUMBEROFGROCERIES replaced by the number of items in your groceries array.
 */
 
-//CODE HERE
+function checkGroceryCount(groceries){
+    if(groceries.length > 5){
+        return 'That looks like a big trip'
+    }
+    else if(groceries.length === 1){
+        return '1 item'
+    }
+    else if(groceries.length <= 5){
+        return groceries + ' items'
+    }
 
+}
+   
+ 
 
 //////////////////Check out your code!////////////////////
 /*
